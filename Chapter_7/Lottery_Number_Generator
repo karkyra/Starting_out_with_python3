@@ -1,0 +1,15 @@
+import random
+LOTTERY_NUM = 7
+
+def main():
+    count = 1
+    lottery = [0] * LOTTERY_NUM
+
+    for index in range(LOTTERY_NUM):
+        lottery[index] = random.randrange(0, 9)
+
+    for i in lottery:
+        print("Lottery # %s is: %s" %(count, i))
+        count +=1
+
+main()
