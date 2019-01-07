@@ -1,0 +1,22 @@
+NUMBER = 5
+def main():
+    total = 0
+    count = 1
+    num = [0] * NUMBER
+
+    for index in range(NUMBER):
+        print("Enter number #",index +1, ": ", end='')
+        num[index] = int(input())
+
+    for i in num:
+        print("%s number is: %s " %(count, i))
+
+        count +=1
+        total += i
+    print("===================")
+    print("Total is: ", total)
+    print("Avarage number is: ", total / len(num))
+    print("Highest number is :", max(num))
+    print("Lowest numer is: ", min(num))
+
+main()
