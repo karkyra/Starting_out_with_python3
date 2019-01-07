@@ -1,0 +1,19 @@
+def main():
+    infile = open('charge_accounts.txt', 'r')
+
+    accounts_list = []
+    for i in infile:
+        i = i.rstrip('\n')
+        accounts_list.append(i)
+    print(accounts_list)
+
+    number = input("Enter charge accout number: ")
+    if number in accounts_list:
+        print(number, " is valid")
+    else:
+        print(number, " is invalid")
+
+    infile.close()
+
+
+main()
