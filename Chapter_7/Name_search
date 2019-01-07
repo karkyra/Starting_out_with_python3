@@ -1,0 +1,41 @@
+def boy_name_open():
+
+    infile_boy = open('BoyNames.txt', 'r')
+
+    boys = infile_boy.readlines()
+
+    infile_boy.close()
+
+    index = 0
+    while index < len(boys):
+        boys[index] = boys[index].rstrip('\n')
+        index += 1
+    return boys
+
+def girl_name_open():
+    infile_girl = open('GirlNames.txt', 'r')
+
+    girls = infile_girl.readlines()
+
+    infile_girl.close()
+
+    index = 0
+
+    while index < len(girls):
+        girls[index] = girls[index].rstrip('\n')
+        index += 1
+    return girls
+
+def search(boys, girls):
+    names = input("Enter a boy's name or girl's name: ")
+    if names in boys or names in girls:
+        print(names, "the name was among the most popular")
+    else:
+        print(names, "the name wasn't among the most popular")
+
+def main():
+    boys = boy_name_open()
+    girls = girl_name_open()
+    search(boys, girls)
+
+main()
