@@ -1,0 +1,22 @@
+CONST = 12
+
+def main():
+    count = 1
+    total = 0
+    month = [0] * CONST
+    for index in range(CONST):
+        print("Enter rainfall for month #", index +1, ": ", sep='', end='')
+        month[index] = float(input())
+
+    for i in month:
+        print("The rainfall for month # %s : %s" %(count, i))
+        count +=1
+        total += i
+    print("=========================")
+    print("Total rainfall for the year: ", total)
+    print("The avarage rainfall for the year: %.2f " % ((total / len(month))))
+    print("The highest rainfall for the year: ", max(month))
+    print("The lowest rainfall for the year: ", min(month))
+
+
+main()
