@@ -1,0 +1,42 @@
+def main():
+    infile = open('USPopulation.txt', 'r')
+
+    population = infile.readlines()
+
+    infile.close()
+
+    index = 0
+    YEAR = 1950
+    total = 0
+
+    while index < len(population):
+        population[index] = population[index].rstrip('\n')
+        index += 1
+
+
+    for i in population:
+        total += int(i)
+
+    avarage = total / len(population)
+    min_pop = min(population)
+    max_pop = max(population)
+
+    index_1 = 0
+    year_num = [0] * len(population)
+    while index_1 < len(population):
+        year_num[index_1] = YEAR
+        index_1 += 1
+        YEAR += 1
+
+    max_year = year_num[population.index(max_pop)]
+    min_year = year_num[population.index(min_pop)]
+
+
+    print("The year with smalest increase in populaton during the 1950-1990 time period is: ", min_year)
+    print("The year with greatest increase in populaton during the 1950-1990 time period is: ", max_year)
+    print("The avarage annual change in population during the 1950-1990 time period is: %.2f" %(avarage))
+
+
+
+
+main()
