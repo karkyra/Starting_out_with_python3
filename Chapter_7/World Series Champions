@@ -1,0 +1,27 @@
+def main():
+    inline = open('WorldSeriesWinners.txt', 'r')
+    teams = inline.readlines()
+    inline.close()
+
+    index = 0
+
+    while index < len(teams):
+        teams[index] = teams[index].rstrip("\n")
+        index += 1
+
+
+    team_name = input("Enter a team name: ")
+
+    won_games = []
+
+    for team in teams:
+        if team == team_name:
+            won_games.append(team_name)
+
+
+    print(team_name, "has won the World Series in the time period from 1903 through 2009 '",len(won_games), " ' times")
+
+
+
+
+main(
