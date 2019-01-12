@@ -1,0 +1,28 @@
+ROWS = 3
+COLS = 3
+
+def main():
+    values = [[0, 0, 0],
+              [0, 0, 0],
+              [0, 0, 0]]
+
+    for r in range(ROWS):
+        for c in range(COLS):
+    
+            values[r][c] = int(input("Please enter a numbers from 1 through 9: "))
+    
+    row1 = values[0][0]+ values[0][1]+ values[0][2]
+    row2 = values[1][0]+ values[1][1]+ values[1][2]
+    row3 = values[2][0]+ values[2][1]+ values[2][2]
+    line1 = values[0][0]+ values[1][0]+ values[2][0]
+    line2 = values[0][1]+ values[1][1]+ values[2][1]
+    line3 = values[0][2]+ values[1][2]+ values[2][2]
+    diag1 = values[0][0]+ values[1][1]+ values[2][2]
+    diag2 = values[0][2]+ values[1][1]+ values[2][0]
+
+    if row1 and row2 and row3 and line1 and line2 and line3 and diag1 and diag2 == 15:
+        print("It is Lo Shu Magic Square")
+    else:
+        print("It is not Lo Shu Magic Square")
+
+main()
