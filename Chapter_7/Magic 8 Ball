@@ -1,0 +1,29 @@
+import random
+def main():
+    infile = open('8_ball_responses.txt','r')
+
+    answers = infile.readlines()
+
+    infile.close()
+    index = 0
+    while index < len(answers):
+        answers[index] = answers[index].rstrip("\n")
+        index += 1
+
+
+
+    again = 'y'
+
+    while again == 'y':
+        question = input("Please ask any question: ")
+        print(random.choice(answers))
+        print("=====================")
+
+        print('Do you want to ask another question?')
+
+        again = input('y = yes, anything else = no: ')
+        print()
+
+
+
+main()
