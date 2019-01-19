@@ -1,0 +1,21 @@
+def main():
+
+    name = input('Enter your full name like "John William Smith": ')
+    new_list = list(name)
+
+    print(name)
+
+    new_name = []
+
+    for i in new_list:
+
+        if  i == i.upper() and i != ' ':
+                new_name.append(i)
+
+
+    for j in new_name:
+        print(j, '.',sep='', end='')
+    print()
+
+
+main()
