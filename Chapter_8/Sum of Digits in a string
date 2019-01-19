@@ -1,0 +1,11 @@
+def main():
+
+    numbers = input("Enter a series of single-digit numbers with nothing separating them: ")
+
+    total = 0
+
+    for i in numbers:
+        if i.isdigit():
+            total += int(i)
+    print("Sum of digits is:", total)
+main()
