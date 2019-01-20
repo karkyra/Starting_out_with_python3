@@ -1,0 +1,13 @@
+def main():
+
+    date = input("Please enter a date in the form 'mm/dd/yyyy': ")
+
+    date_list = date.split("/")
+    month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
+    month_name = month[int(date_list[0]) -1]
+    
+    print(month_name, date_list[1], ',',date_list[2])
+
+
+main()
