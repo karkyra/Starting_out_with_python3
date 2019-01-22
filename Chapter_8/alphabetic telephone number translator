@@ -1,0 +1,38 @@
+def main():
+    phone_number = input('Enter a 10-character telephone number in the format XXX-XXX-XXXX: ')
+
+    number = ''
+
+    for i in phone_number:
+        phone_number = phone_number.upper()
+        if i.isdigit():
+            number += i
+        elif i == 'a' or i =='b' or i == 'c':
+            number += '2'
+        elif i == 'd' or i == 'e' or i == 'f':
+            number += '3'
+        elif i == 'g' or i == 'h' or i == 'i':
+            number += '4'
+        elif i == 'j' or i == 'k' or i == 'l':
+            number += '5'
+        elif i == 'm' or i == 'n' or i == 'o':
+            number += '6'
+        elif i == 'p' or i == 'q' or i == 'r' or i =='s':
+            number += '7'
+        elif i == 't' or i == 'u' or i == 'v':
+            number += '8'
+        elif i == 'w' or i == 'x' or i == 'y' or i == 'z':
+            number += '9'
+        elif i == '-':
+            number += ''
+
+
+
+    num_list = []
+
+    for j in number:
+        num_list.append(j)
+
+    
+
+    print(num_list[0],num_list[1],num_list[2],'-', num_list[3],num_list[4],num_list[5],'-',num_list[6],num_list[7],num_list[8],num_list[9])
