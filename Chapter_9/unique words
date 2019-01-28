@@ -1,0 +1,13 @@
+def main():
+    infile = input('Enter a file name with extension: ')
+    open_file = open(infile, 'r')
+
+    unique_words = set()
+
+    for i in open_file:
+        i = i.rstrip('\n')
+        if i not in unique_words:
+            unique_words.add(i)
+    print(unique_words)
+
+main()
