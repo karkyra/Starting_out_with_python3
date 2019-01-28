@@ -1,0 +1,21 @@
+def main():
+    room_number = {'CS101':'3004', 'CS102':'4501', 'CS103':'6755', 'NT110':'1244', 'CM241':'1411'}
+    instructor = {'CS101':'Haynes', 'CS102':'Alvarado', 'CS103':'Rich', 'NT110':'Burke', 'CM241':'Lee'}
+    meeting_time = {'CS101':'8:00 a.m.', 'CS102':'9:00 a.m.', 'CS103':'10:00 a.m.', 'NT110':'11:00 a.m.', 'CM241':'1:00 p.m.'}
+
+    print('Course Number')
+    print('============')
+    for i in room_number:
+        print(i)
+    print('============')
+
+    user_enter = input('Please enter Course Number: ')
+
+    user_enter_upper = user_enter.upper()
+
+    for i in room_number:
+        if i == user_enter_upper:
+            print("Course number: %s\nCourse's room number: %s\nInstructor: %s\nMeeting time: %s" % (i , room_number[i], instructor[i], meeting_time[i]))
+
+
+main()
