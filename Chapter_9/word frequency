@@ -1,0 +1,24 @@
+def main():
+    infile = input('Enter a file name with extension: ')
+    open_file = open(infile, 'r')
+
+    word_frequency = {}
+
+    count = 1
+
+    for i in open_file:
+        i = i.rstrip('\n')
+        i = i.lower()
+        if i not in word_frequency:
+            word_frequency[i] = count
+        else:
+            word_frequency[i] = count + 1
+
+
+    for key, value in word_frequency.items():
+        print(key, ":", value)
+
+
+
+
+main()
