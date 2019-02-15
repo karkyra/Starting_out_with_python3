@@ -1,0 +1,40 @@
+from car import Car
+
+def main():
+
+    car1 = Car(2014, 'Toyota')
+
+    car1.accelerate()
+
+    print('The current speed of the car is:', car1.get_speed())
+    car1.accelerate()
+
+    print('The current speed of the car is:', car1.get_speed())
+    car1.accelerate()
+
+    print('The current speed of the car is:', car1.get_speed())
+    car1.accelerate()
+
+    print('The current speed of the car is:', car1.get_speed())
+    car1.accelerate()
+
+    print('The current speed of the car is:', car1.get_speed())
+
+    car1.brake()
+    print('The current speed of the car is:', car1.get_speed())
+
+    car1.brake()
+    print('The current speed of the car is:', car1.get_speed())
+
+    car1.brake()
+    print('The current speed of the car is:', car1.get_speed())
+
+    car1.brake()
+    print('The current speed of the car is:', car1.get_speed())
+
+    car1.brake()
+    print('The current speed of the car is:', car1.get_speed())
+
+
+
+main()
