@@ -1,0 +1,17 @@
+import pet
+
+def main():
+
+    pet_name = input("Enter the pet's name: ")
+    pet_type = input("Enter the pet's type: ")
+    pet_age = int(input("enter the pet's age: "))
+
+    pets = pet.Pet(pet_name, pet_type, pet_age)
+
+    print('==================================')
+    # print("Pet's name is:", pets.get_name())
+    # print("Pet's type is:", pets.get_animal_type())
+    # print("Pet's age is:", pets.get_age())
+    print(pets)
+
+main()
