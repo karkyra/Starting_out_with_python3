@@ -17,6 +17,8 @@ def change_types(lst):
             lst2.append(i.capitalize()+"!")
         elif i == True:
             lst2.append(False)
+        elif i == False:
+            lst2.append(True)
         else:
             lst2.append(i)
 
@@ -24,4 +26,4 @@ def change_types(lst):
 
 
 change_types(["a", 12, True])
-change_types([13, "13", "12", "twelve"]) 
+change_types([13, "13", "12", "twelve"])
