@@ -5,7 +5,7 @@
 def int_to_str(num):
     return str(num)
 
-print(int_to_str(4))
+print(type(int_to_str(4)))
 
 
 def str_to_int(num):
